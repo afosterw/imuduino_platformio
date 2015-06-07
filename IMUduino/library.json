@@ -1,13 +1,17 @@
 {
     "name": "IMUduino",
     "keywords": "imuduino, imu, ble, btle",
-    "description": "The core library for the imuduino. ",
+    "description": "The core library for the imuduino",
     "repository":
     {
         "type": "git",
-        "url": "git@github.com:zrecommerce/imuduino-btle.git"
+        "url": "https://github.com/zrecommerce/imuduino-btle.git"
     },
     "frameworks": "arduino",
     "platforms": "atmelavr",
-    "include": "Arduino/libraries/IMUduino/*"
+    "include":  "Arduino/libraries/IMUduino",
+    "exclude": [
+        "Arduino/libraries/IMUduino/[Ldv]*",
+        "Arduino/libraries/IMUduino/calibration_old"
+    ]
 }
